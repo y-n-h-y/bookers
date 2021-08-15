@@ -1,0 +1,144 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+h2 {
+    font-size : 2rem;
+    color : #333333;
+}
+
+.book-list {
+    width : 90%;
+    margin : auto;
+    padding : 60px 0 70px 0;
+    .book-list_table {
+        padding-top : 20px;
+        table {
+        text-align : left;
+        thead {
+            tr {
+                th {
+                    font-size : 1.2rem;
+                    color : #444444;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td:first-child {
+                    padding-right : 30px;
+                }
+                td:nth-child(2) {
+                    padding-right : 20px;
+                }
+                td:nth-child(3),
+                td:nth-child(4) {
+                    padding-right : 10px;
+                }
+                td {
+                    padding-top : 20px;
+                    .list-link {
+                        display : block;
+                        padding : 5px 25px;
+                        background-color : #00BFFF;
+                        border : solid 2px #00BFFF;
+                        border-radius : 5px;
+                        text-align : center;
+                        text-decoration : none;
+                        font-size : 0.9rem;
+                        color : #ffffff;
+                        -webkit-transition : all .2s ease-in-out;
+                        transition : all .2s ease-in-out;
+                        &:hover {
+                            background-color : #ffffff;
+                            color : #00BFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+
+.new-book {
+    width : 90%;
+    margin : auto;
+    h4 {
+        padding-top : 20px;
+    }
+}
+
+.show {
+    width : 90%;
+    margin : auto;
+    padding-top : 40px;
+    h2 {
+        padding-top : 30px;
+    }
+    p {
+        padding-top : 10px;
+    }
+    .link {
+        display : flex;
+        justify-content : space-between;
+        width : 250px;
+        padding-top : 70px;
+        li {
+            width : calc(90%/2);
+            list-style : none;
+            text-align : center;
+            .link-edit,
+            .link-destroy {
+                display : block;
+                width : 100%;
+                padding : 5px 0;
+                background-color : #00BFFF;
+                border : solid 2px #00BFFF;
+                border-radius : 5px;
+                font-size : 0.9rem;
+                color : #ffffff;
+                text-decoration : none;
+                -webkit-transition : all .2s ease-in-out;
+                transition : all .2s ease-in-out;
+                 &:hover {
+                    background-color : #ffffff;
+                    color : #00BFFF;
+                }
+            }
+        }
+    }
+}
+
+.edit {
+    width : 90%;
+    margin : auto;
+    padding-top : 40px;
+    .save {
+        padding-top : 30px;
+    .save-link {
+        display : block;
+        padding : 5px 25px;
+        background-color : #00BFFF;
+        border : solid 2px #00BFFF;
+        border-radius : 5px;
+        text-align : center;
+        text-decoration : none;
+        font-size : 0.9rem;
+        color : #ffffff;
+        cursor : pointer;
+        -webkit-transition : all .2s ease-in-out;
+        transition : all .2s ease-in-out;
+        &:hover {
+            background-color : #ffffff;
+            color : #00BFFF;
+        }
+      }
+    }
+}

@@ -1,0 +1,11 @@
+<div class="show">
+    <h2>タイトル</h2>
+    <p><%= @book.title %></p>
+    <h2>感想</h2>
+    <p><%= @book.body %></p>
+    <ul class="link">
+    <li><%= link_to '編集', edit_book_path(@book.id), class:"link-edit" %></li>
+    <li><%= link_to '戻る', books_path, class:"link-destroy" %></li>
+    </ul>
+</div>
+
