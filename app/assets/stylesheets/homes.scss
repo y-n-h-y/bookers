@@ -1,0 +1,50 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+.top {
+    width : 90%;
+    margin : 0 auto;
+    h1 {
+        padding-top : 150px;
+        color :#333333;
+        text-align : center;
+    }
+    p {
+        width : 305px;
+        max-width : 90%;
+        margin : 0 auto;
+        padding-top : 20px;
+        text-align : justify;
+        text-justify : distribute;
+    }
+    .start {
+        width : 300px;
+        margin : 30px auto;
+        text-align : center;
+        .start-link {
+            display : block;
+            width : 300px;
+            max-width : 100%;
+            padding : 10px 0;
+            background-color : #00BFFF;
+            border : solid 2px #00BFFF;
+            border-radius : 10px;
+            text-decoration : none;
+            color : #ffffff;
+            -webkit-transition : all .2s ease-in-out;
+            transition : all .2s ease-in-out;
+            &:hover {
+                background-color : #ffffff;
+                color : #00BFFF;
+            }
+        }
+    }
+
+}
