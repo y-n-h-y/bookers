@@ -141,4 +141,33 @@ h2 {
         }
       }
     }
+        .link {
+        display : flex;
+        justify-content : space-between;
+        width : 250px;
+        padding-top : 70px;
+        li {
+            width : calc(90%/2);
+            list-style : none;
+            text-align : center;
+            .link-edit,
+            .link-destroy {
+                display : block;
+                width : 100%;
+                padding : 5px 0;
+                background-color : #00BFFF;
+                border : solid 2px #00BFFF;
+                border-radius : 5px;
+                font-size : 0.9rem;
+                color : #ffffff;
+                text-decoration : none;
+                -webkit-transition : all .2s ease-in-out;
+                transition : all .2s ease-in-out;
+                 &:hover {
+                    background-color : #ffffff;
+                    color : #00BFFF;
+                }
+            }
+        }
+    }
 }

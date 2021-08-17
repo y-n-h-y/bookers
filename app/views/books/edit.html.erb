@@ -1,7 +1,7 @@
 <div class="edit">
     <h1>編集画面</h1>
     <% if @book.errors.any? %>
-    <%= @book.errors.count %>件のエラー
+    <%= @book.errors.count %>件のerror
     <% @book.errors.full_messages.each do |message| %>
     <%= message %>
     <% end %>
@@ -14,5 +14,9 @@
     <div class="save">
     <%= f.submit 'Update Book', class:"save-link" %>
     </div>
+    <ul class="link">
+    <li><%= link_to 'Show', book_path(@book.id), class:"link-edit" %></li>
+    <li><%= link_to 'Back', books_path, class:"link-destroy" %></li>
+    </ul>
   <% end %>
 </div>
